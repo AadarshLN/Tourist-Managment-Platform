@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourism</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> 
+   <div class ="background" id="home" >
+    <nav class="navbar">
+        <div class="nav-list">
+            <ul>
+                <label class="logo">Tourism</label>
+    
+            </ul>
+    
+            <div class="leftNav">
+                <input type="text" name="search" id="search">
+                <button class="btn btn-sm">Search</button>
+    
+            </div>
+        </div>
+        
+        <ul class = "navlist">
+            <li><a href="/home" class="active" id="ki" >HOME</a></li>
+            <li><a href="/about"id="ki" >ABOUT</a></li>
+            <li><a href="/contact"id="ki" >CONTACT</a></li>
+            <li class="dropdown" >
+                <a href="/choice_of_login_page"id="ki" >PROFILE</a>
+                <div class="dropdown-content">
+                    <a class="dc" href="wishlist.html">Wishlist</a>
+                    <a class="dc" href="History.html">History</a>
+                    <a class="dc" href="#">Feedback</a>
+                    <a class="dc" href="#">Logout</a>
+
+                </div>
+            </li>
+
+        </ul>
+
+        
+    </nav>
+
+
+   
+
+
+   <div class="new" id="about">
+
+        <section class="secright">
+
+      
+        <div class="paras">
+ 
+         <p class="text-big">This is Us</p>
+         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos iusto quibusdam molestiae dolore 
+             exercitationem quia ipsum natus enim nam, inventore rerum aspernatur consectetur. Cupiditate, sint culpa mollitia, molestiae nihil consequuntur iusto voluptates alias iste nisi illum provident repudiandae nam impedit cumque perspiciatis. Consectetur voluptatibus aliquid dicta pariatur illo ipsum quod necessitatibus cupiditate fugiat earum amet natus nisi soluta adipisci rem fugit perspiciatis, magni veritatis error, ex sapiente sit illum quisquam. Dicta quam accusamus fugit provident quidem corporis deleniti dolorem? Asperiores adipisci quo hic sed cupiditate excepturi sequi quasi iusto dolor rem, deserunt at soluta? Beatae ipsa aperiam accusantium, culpa fugiat quam. Dignissimos tempora consectetur expedita dicta, at provident accusantium fuga suscipit culpa? Voluptas, accusantium distinctio exercitationem fuga, omnis eos quod sapiente,
+              necessitatibus fugit laudantium alias reiciendis in!</p>
+        </div>
+ 
+        <span class="thumbnail"><img src="{% static "image/image1.jpg" %}" alt="static\image\image1.jpg"  style ="width: 500px; padding-top:100px;padding-left:70px"></span>
+     </section>
+   </div>
+
+
+   
+</body>
+</html>

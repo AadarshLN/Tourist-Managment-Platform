@@ -1,0 +1,167 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0d5c96f991.js" crossorigin="anonymous"></script>
+    <link href="static/css/style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    *
+    {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        /* color:#2e424d; */
+    }
+    .fun {
+        padding: 25px 55px;
+        font-size: large;
+        background-color: rgb(218, 218, 218);
+        
+        color: black;
+        font-weight: bold;
+        transition: background-color 0.15s;
+        border-color: rgb(218, 218, 218);
+        border-radius: 4px;
+        opacity: 0.75;
+        width: 450px;
+        height: 94.4;
+        margin-left: 24px;
+    }
+
+    button:hover {
+        transition: border-color 0.15s;
+        border-color: #2e424d;
+        border-width: 2px;
+        
+    }
+
+    button:active {
+        background-color: transparent;
+        color: black;
+        transition: color 0.15s;
+    }
+
+    .Admin-button {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 21%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .User-button {
+        margin: 0;
+        position: absolute;
+        top: 65%;
+        left: 20.9%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    body {
+        background:url(static/image/image5.jpg); 
+        font-style: arial;
+        background-size: cover;
+        
+    }
+
+    .bel
+    {
+        justify-content: center;
+       
+    }
+   
+    
+    .loginbody {
+        margin-left: 7%;
+        margin-top: 10%;
+        margin-bottom: 2%;  
+        font-size: 50px;
+        font-weight: bolder;
+        color: white;
+    }
+
+    .sublogin {
+        margin-left: 7%;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 20px;
+        
+    }
+
+   
+
+</style>
+
+<body >
+    <nav class="navbar  ">
+        <div class="nav-list">
+            <ul>
+                <label class="logo">Tourism</label>
+    
+            </ul>
+    
+            <div class="leftNav">
+                <input type="text" name="search" id="search">
+                <button class="btn btn-sm">Search</button>
+    
+            </div>
+        </div>
+        
+        <ul class = "navlist">
+            <li><a href="/home" class="active" id="ki" >HOME</a></li>
+            <li><a href="/about"id="ki" >ABOUT</a></li>
+            <li><a href="/contact"id="ki" >CONTACT</a></li>
+            <li class="dropdown" >
+                <a href="/choice_of_login_page"id="ki" >PROFILE</a>
+                <div class="dropdown-content">
+                    <a class="dc" href="/wish_list">Wishlist</a>
+                    <a class="dc" href="History.html">History</a>
+                    <a class="dc" href="#">Feedback</a>
+                    <a class="dc" href="#">Logout</a>
+
+                </div>
+            </li>
+
+        </ul>
+
+   </nav>
+
+
+   
+    
+  <div class="bel" id="ne">
+
+    <p class="loginbody">
+        Login Page
+    </p>
+
+    <p class="sublogin">
+        Choose your way to connect us.
+    </p>
+
+
+     
+    <button class="Admin-button fun" type="button" >
+        <i class="fa-solid fa-hotel"></i> &nbsp <a href="/login">Hotel Admin</a>
+    </button>
+    
+    <button class="User-button fun" type="button">
+        <i class="fa-regular fa-user"></i>&nbsp <a href="/profile">User</a>
+    </button>
+
+
+  </div>
+
+    
+</body>
+
+
+    

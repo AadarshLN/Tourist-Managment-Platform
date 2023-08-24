@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="static/css/style.css">
+  <link rel="stylesheet" href="static/css/login.css">
+ 
+  <!-- jQuery CDN Link -->
+ 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Transparent form</title>
+</head>
+
+<nav class="navbar" >
+  <div class="nav-list">
+      <ul>
+          <label class="logo">Tourism</label>
+
+      </ul>
+
+      <div class="leftNav">
+          <input type="text" name="search" id="search">
+          <button class="btn btn-sm">Search</button>
+
+      </div>
+  </div>
+  
+  <ul class = "navlist">
+      <li><a href="/home" class="active" id="ki" >HOME</a></li>
+      <li><a href="/about"id="ki" >ABOUT</a></li>
+      <li><a href="/contact"id="ki" >CONTACT</a></li>
+      <li class="dropdown" >
+          <a href="/choice_of_login_page"id="ki" >PROFILE</a>
+          <div class="dropdown-content">
+              <a class="dc" href="wishlist.html">Wishlist</a>
+              <a class="dc" href="History.html">History</a>
+              <a class="dc" href="#">Feedback</a>
+              <a class="dc" href="#">Logout</a>
+
+          </div>
+      </li>
+
+  </ul>
+
+  
+  </nav>
+ 
+<body  >
+  <div class="container" id="l" class="im1" >
+    <div class="form">
+      <div class="btn">
+        <button class="signUpBtn">SIGN UP</button>
+        <button class="loginBtn">LOG IN</button>
+      </div>
+      <form class="signUp" action="" method="get">
+        <div class="formGroup">
+          <input type="text" id="userName" placeholder="User Name" autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="password" placeholder="Password" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="confirmPassword" placeholder="Confirm Password" required autocomplete="off">
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">I agree with term & conditions</span>
+        </div>
+        <div class="formGroup">
+          <button type="button" class="btn2">REGISTER</button>
+        </div>
+ 
+      </form>
+        
+      <!------ Login Form -------- -->
+      <form class="login" action="" method="get">
+        
+        <div class="formGroup">
+          <input type="email" placeholder="Email ID" name="email" required autocomplete="off">
+        </div>
+        <div class="formGroup">
+          <input type="password" id="password" placeholder="Password" required autocomplete="off">
+         
+        </div>
+        <div class="checkBox">
+          <input type="checkbox" name="checkbox" id="checkbox">
+          <span class="text">Keep me signed in on this device</span>
+        </div>
+        <div class="formGroup">
+          <button type="button" class="btn2">REGISTER</button>
+        </div>
+ 
+      </form>
+ 
+    </div>
+  </div>
+ 
+  
+</body>
+<script src="static/jQuery.js"></script>
+</html>
